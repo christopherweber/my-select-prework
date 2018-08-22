@@ -12,5 +12,5 @@ end
 
 
 my_select(nums) do |num| 
-  num.even? 
+  num.even?
 end 
