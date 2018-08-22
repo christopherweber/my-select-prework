@@ -9,3 +9,8 @@ end
 
   empty_arr.compact 
 end 
+
+
+my_select(nums) do |num| 
+  num.even? 
+end 
