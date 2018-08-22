@@ -1,17 +1,12 @@
 def my_select(array) 
-  i =0 
-  select = [] 
-  while i < array.length 
-    if (yield(array[i]))
-       
-      select << array[i] 
-    end 
-    i += 1 
-  end 
-  select 
-end 
+x = 0
+new_arr = []
 
-my_select(nums) do |num| 
-  num.even? 
-end 
-
+while x < array.length
+  if yield(array[x]) == true
+  new_arr.push(array[x])
+end
+  x+=1
+end
+new_arr
+end
